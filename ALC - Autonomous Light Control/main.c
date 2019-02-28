@@ -35,7 +35,7 @@ int main(void)
 
         //savoir si c jour ou nuit
 
-        if (hr_minLSoleil < hr_minLocal && hr_minLocal > hr_minCSoleil)
+        if (hr_minLSoleil < hr_minLocal && hr_minLocal < hr_minCSoleil)
         {
             sleep(1); //si c le jour attendre 1sec
         }
