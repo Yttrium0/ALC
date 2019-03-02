@@ -8,7 +8,7 @@
 
 int lightControl(int cmd)
 {
-    wiringPiSetupGpio();
+    wiringPiSetup();
     int lightStatus = digitalRead(SWITCH_LIGHT_GPIO);
 
     int cmdStatus = 99;
@@ -42,7 +42,7 @@ int lightControl(int cmd)
 
 int IRSensor()
 {
-    wiringPiSetupGpio();
+    wiringPiSetup();
     int IRStatus = digitalRead(IR_SENSOR_GPIO);
     return IRStatus;
 }
